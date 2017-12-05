@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:tekenen"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+
+    <Grid x:Name="maingrid">
+        <Grid Name="draw">
+            <Image Name="scroll" Grid.Column="1" Grid.Row="0" Source="/images/scroll.jpg" Visibility="Hidden"/>
+        </Grid>
+        <Button Name="btnPoligon" Content="poligon" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Height="25" Click="btnPoligon_Click"/>
+        <Button Name="btnSquare" Content="square" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,25,0,0" Width="74" Height="25" Click="btnSquare_Click" />
+        <Button Name="btnLine" Content="Line" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,50,0,0" Width="74" Height="25" Click="btnLine_Click" />
+        <Button Name="btnClear" Content="Clear" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,75,0,0" Width="74" Height="25" Click="btnClear_Click" />
+        <Button Name="btnimage" Content="Image" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,100,0,0" Width="74" Height="25" Click="btnimage_Click" />
     </Grid>
 </Window>
